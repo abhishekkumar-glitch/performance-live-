@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SG Leaderboard — Clone (no images)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1>SG Leaderboard</h1>
+      <div class="subtitle">Community rankings — example layout (images removed)</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <aside class="filters">
+      <div class="filter-group">
+        <label for="period">Period</label>
+        <select id="period">
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="all">All time</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="dev">Developers</option>
+          <option value="design">Designers</option>
+          <option value="data">Data</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="search">Search</label>
+        <input id="search" placeholder="Search name or team">
+      </div>
+      <div class="filter-group">
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Leaderboard</h2>
+          <div class="panel-meta">Top contributors across categories</div>
+        </div>
+
+        <table id="leaderboard" class="leaderboard">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-name">Name</th>
+              <th class="col-team">Team</th>
+              <th class="col-score">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows populated by script.js -->
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Built as a layout clone — no images or external data.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
